@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ block.super }}
+<h1>Приветствую на главной странице!</h1>
+<a href="{% url 'items-list' %}">Список товаров</a>
+{% include 'inc/inc-footer.html' %}
+{% endblock %}
+
